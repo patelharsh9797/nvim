@@ -12,9 +12,11 @@ return {
 				"tailwindcss-language-server",
 				"typescript-language-server",
 				"lua-language-server",
+				"prismals",
 			})
 
 			opts.ui = {
+				height = 0.8,
 				border = "rounded",
 				icons = {
 					package_installed = "✓",

@@ -30,26 +30,6 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
-					["<C-k>"] = cmp.mapping({
-						i = function()
-							if cmp.visible() then
-								require("notify")("visible")
-								cmp.abort()
-							else
-								require("notify")("not visible")
-								cmp.complete()
-							end
-						end,
-						c = function()
-							if cmp.visible() then
-								require("notify")("visible")
-								cmp.close()
-							else
-								require("notify")("not visible")
-								cmp.complete()
-							end
-						end,
-					}),
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
