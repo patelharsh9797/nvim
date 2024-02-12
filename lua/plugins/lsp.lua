@@ -13,6 +13,15 @@ return {
 				"typescript-language-server",
 				"lua-language-server",
 			})
+
+			opts.ui = {
+				border = "rounded",
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			}
 		end,
 	},
 

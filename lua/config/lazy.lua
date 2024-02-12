@@ -39,7 +39,36 @@ require("lazy").setup({
 	-- install = { colorscheme = { "tokyonight", "habamax" } },
 	checker = { enabled = true }, -- automatically check for plugin updates
 	ui = {
+		size = { width = 0.8, height = 0.8 },
+		title = nil, ---@type string only works when border is not "none"
+		title_pos = "center", ---@type "center" | "left" | "right"
+		-- Show pills on top of the Lazy window
+		pills = true, ---@type boolean
 		border = "rounded",
+		icons = {
+			cmd = " ",
+			config = "",
+			event = "",
+			ft = " ",
+			init = " ",
+			import = " ",
+			keys = " ",
+			lazy = "󰒲 ",
+			loaded = "●",
+			not_loaded = "○",
+			plugin = " ",
+			runtime = " ",
+			require = "󰢱 ",
+			source = " ",
+			start = "",
+			task = "✔ ",
+			list = {
+				"●",
+				"➜",
+				"★",
+				"‒",
+			},
+		},
 	},
 	performance = {
 		rtp = {
