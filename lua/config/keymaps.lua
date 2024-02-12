@@ -28,10 +28,16 @@ keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
 -- Delete a word backwards
-keymap.set("n", "dw", 'vb"_d')
+-- keymap.set("n", "dw", 'vb"_d')
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
+
+-- ThePrimeagen Keymaps
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "<n>", "nzzzv")
+keymap.set("n", "<N>", "Nzzzv")
 
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
