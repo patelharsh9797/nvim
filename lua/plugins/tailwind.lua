@@ -1,6 +1,7 @@
 return {
 	{
 		"NvChad/nvim-colorizer.lua",
+		event = { "BufReadPre", "BufNewFile" },
 		opts = {
 			user_default_options = {
 				tailwind = true,
@@ -10,7 +11,7 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
-			{ "roobert/tailwindcss-colorizer-cmp.nvim", config = true },
+			{ "roobert/tailwindcss-colorizer-cmp.nvim", event = { "BufReadPre", "BufNewFile" }, config = true },
 		},
 		opts = function(_, opts)
 			-- original LazyVim kind icon formatter

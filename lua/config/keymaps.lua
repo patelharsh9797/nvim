@@ -50,12 +50,17 @@ keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
 keymap.set("n", "<C-m>", "<C-i>", opts)
 
 -- New tab
-keymap.set("n", "te", ":tabedit")
-keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+keymap.set("n", "te", ":tabedit<Return>", { desc = "Open new tab" }) -- Open new tab
+keymap.set("n", "<tab>", ":tabnext<Return>", opts) -- Next Tab
+keymap.set("n", "<s-tab>", ":tabprev<Return>", opts) -- Previous Tab
+keymap.set("n", "tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
+
 -- Split window
-keymap.set("n", "ss", ":split<Return>", opts)
-keymap.set("n", "sv", ":vsplit<Return>", opts)
+keymap.set("n", "ss", ":split<Return>", opts) -- split window vertically
+keymap.set("n", "sv", ":vsplit<Return>", opts) -- split window horizontally
+keymap.set("n", "se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
+keymap.set("n", "sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
+
 -- Move window
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
