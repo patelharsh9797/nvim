@@ -12,6 +12,7 @@ return {
 				"lua",
 				"javascript",
 				"typescript",
+				"prisma",
 			},
 			highlight = { enable = true },
 			indent = { enable = true },
