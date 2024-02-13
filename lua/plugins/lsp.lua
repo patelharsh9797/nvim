@@ -12,7 +12,7 @@ return {
 				"tailwindcss-language-server",
 				"typescript-language-server",
 				"lua-language-server",
-				"prismals",
+				"prisma-language-server",
 			})
 
 			opts.ui = {
