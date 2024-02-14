@@ -42,6 +42,7 @@ require("lazy").setup({
 		size = { width = 0.8, height = 0.8 },
 		title = nil, ---@type string only works when border is not "none"
 		title_pos = "center", ---@type "center" | "left" | "right"
+		wrap = true, -- wrap the lines in the ui
 		-- Show pills on top of the Lazy window
 		pills = true, ---@type boolean
 		border = "rounded",
