@@ -4,17 +4,21 @@ return {
 		"williamboman/mason.nvim",
 		opts = function(_, opts)
 			vim.list_extend(opts.ensure_installed, {
-				"stylua",
+				"css-lsp",
+				"eslint-lsp",
+				"html-lsp",
+				"json-lsp",
+				"lua-language-server",
+				"prettier",
+				"prisma-language-server",
 				"selene",
 				"shellcheck",
 				"shfmt",
-				"prettier",
+				"stylua",
 				"tailwindcss-language-server",
 				"typescript-language-server",
-				"lua-language-server",
-				"prisma-language-server",
+				"yaml-language-server",
 			})
-
 			opts.ui = {
 				height = 0.8,
 				border = "rounded",
