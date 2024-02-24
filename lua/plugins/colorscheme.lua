@@ -55,4 +55,32 @@ return {
 			},
 		},
 	},
+	-- {
+	-- 	"scottmckendry/cyberdream.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("cyberdream").setup({
+	-- 			-- Recommended - see "Configuring" below for more config options
+	-- 			transparent = true,
+	-- 			italic_comments = true,
+	-- 			hide_fillchars = true,
+	-- 			borderless_telescope = true,
+	-- 		})
+	-- 		-- vim.cmd("colorscheme cyberdream") -- set the colorscheme
+	-- 	end,
+	-- },
+	{
+		"sainnhe/sonokai",
+		priority = 1000,
+		config = function()
+			vim.g.sonokai_transparent_background = "1"
+			vim.g.sonokai_enable_italic = "1"
+			vim.g.sonokai_style = "andromeda" -- a𝐭𝐥𝐚𝐧𝐭𝐢𝐬, a𝐧𝐝𝐫𝐨𝐦𝐞𝐝𝐚, s𝐡𝐮𝐬𝐢𝐚, m𝐚𝐢𝐚, e𝐬𝐩𝐫𝐞𝐬𝐬𝐨
+			-- vim.cmd.colorscheme("sonokai")
+			require("notify").setup({
+				background_colour = "#0f0f0f",
+			})
+		end,
+	},
 }
