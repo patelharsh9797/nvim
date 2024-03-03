@@ -13,6 +13,12 @@ return {
 				-- Highlight the entire buffer all at once
 				-- strategy = require("ts-rainbow").strategy.global,
 			},
+			autotag = {
+				enable = true,
+				enable_rename = true,
+				enable_close = true,
+				enable_close_on_slash = true,
+			},
 			ensure_installed = {
 				"css",
 				"gitignore",

@@ -30,7 +30,8 @@ return {
 			}
 		end,
 	},
-
+	-- East TS TypeScript Error translation to Simple English
+	-- { "dmmulroy/ts-error-translator.nvim" },
 	{
 		"neovim/nvim-lspconfig",
 		opts = {

@@ -1,5 +1,6 @@
 return {
 	{
+		enabled = false,
 		"catppuccin/nvim",
 		lazy = true,
 		name = "catppuccin",
