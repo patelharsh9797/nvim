@@ -1,6 +1,6 @@
 return {
 	{
-		enabled = false,
+		enabled = true,
 		"catppuccin/nvim",
 		lazy = true,
 		name = "catppuccin",
@@ -58,7 +58,7 @@ return {
 		},
 	},
 	{
-		enabled = true,
+		enabled = false,
 		"olivercederborg/poimandres.nvim",
 		lazy = false,
 		priority = 1000,
