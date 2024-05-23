@@ -24,9 +24,9 @@ return {
 		opts = {
 			options = {
 				-- globalstatus = false,
-				theme = "catppuccin",
+				-- theme = "catppuccin",
 				-- theme = "dracula",
-				-- theme = "poimandres",
+				theme = "poimandres",
 			},
 		},
 	},

@@ -58,7 +58,7 @@ return {
 		},
 	},
 	{
-		enabled = false,
+		enabled = true,
 		"olivercederborg/poimandres.nvim",
 		lazy = false,
 		priority = 1000,
