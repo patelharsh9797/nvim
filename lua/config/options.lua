@@ -5,3 +5,4 @@
 local opt = vim.opt -- for conciseness
 
 opt.pumblend = 0 -- transperent BG for suggestion and hover docs
+opt.clipboard = "unnamedplus"
